@@ -1,0 +1,3 @@
+/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/CMakeFiles/rebuild_cache.dir
+/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/CMakeFiles/test_sorting.dir
+/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/CMakeFiles/edit_cache.dir

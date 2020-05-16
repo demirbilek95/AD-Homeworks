@@ -25,7 +25,10 @@ void print_matrix(float **A,const size_t r, const size_t c){
 
 int main(int argc, char *argv[]) {
 
-  size_t n = 1 << 12;
+  FILE *f;
+  f = fopen("benchmark_plot/benchmark_results.txt","w");
+
+  size_t n = 1 << 11;
 
   float **A = allocate_random_matrix(n, n);
   float **B = allocate_random_matrix(n, n);
@@ -38,27 +41,32 @@ int main(int argc, char *argv[]) {
   // For simplicity, benchmark is performed on square matrices
 
   printf("n\tNaive Alg.\tStrassen's Alg.\tImproved Strassen\tSame result\n");
+  fprintf(f,"n\tNaive Alg.\tStrassen's Alg.\tImproved Strassen\tSame result\n");
   for (size_t j = 1; j <= n; j *= 2) {
 
     printf("%ld\t", j);
+    fprintf(f,"%ld\t", j);
 
     clock_gettime(CLOCK_REALTIME, &b_time);
     naive_matrix_multiplication(C0, A, B, j, j, j, j);
     clock_gettime(CLOCK_REALTIME, &e_time);
 
     printf("%lf\t", get_execution_time(b_time, e_time));
+    fprintf(f,"%lf\t", get_execution_time(b_time, e_time));
 
     clock_gettime(CLOCK_REALTIME, &b_time);
     strassen_matrix_multiplication(C1, A, B, j);
     clock_gettime(CLOCK_REALTIME, &e_time);
 
     printf("%lf\t", get_execution_time(b_time, e_time));
+    fprintf(f,"%lf\t", get_execution_time(b_time, e_time));
 
     clock_gettime(CLOCK_REALTIME, &b_time);
     improved_strassen_matrix_multiplication(C2,A,B,j,j,j,j);
     clock_gettime(CLOCK_REALTIME, &e_time);
 
     printf("%lf\t", get_execution_time(b_time, e_time));
+    fprintf(f,"%lf\t", get_execution_time(b_time, e_time));
 
     int result1 = same_matrix((float const *const *const)C0,
                 (float const *const *const)C1, j, j);
@@ -69,13 +77,16 @@ int main(int argc, char *argv[]) {
 
     if(result1 && result2){
       printf("\t1\n");
+      fprintf(f,"1\n");
     }
     else{
       printf("\t0\n");
+      fprintf(f,"0\n");
     }
 
 
   }
+  fclose(f);
 
   deallocate_matrix(A, n);
   deallocate_matrix(B, n);

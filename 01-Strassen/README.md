@@ -36,3 +36,7 @@ Finally, the last column, which is excusively meant to validate the implementati
 In addition to original [repository](https://github.com/albertocasagrande/AD_strassen_template) to generalize implementation basically I changed the parameters of `naive_matrix_multiplication` and `improved_strassen_matrix_multiplication` functions. Before there was only `size_t n` now there are also row, column of matrices.
 For improving Strassen's algorithm, allocations of S matrices (it was 10 and redundant) reduced to 2 because maximum two S matrices were used in calculations. In conclusion improvements were observed from table which is the output of executable.
 For simplicity benchmark is performed on square matrices but functions (naive and improved strassen) are tested with non-square matrices. Test function is put inside of matrices instead of modifying its parameters.
+
+For having executable `strassen_test.x` basically make and plot (benchmark_plot folder) `python plot.py` are enough
+
+![Plot](/benchmark_plot/Benchmark_results.png) 
