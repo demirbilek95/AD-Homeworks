@@ -1,0 +1,3 @@
+/usr/local/lib/libbinheap.so
+/usr/local/include/binheap.h
+/usr/local/include/total_orders.h
