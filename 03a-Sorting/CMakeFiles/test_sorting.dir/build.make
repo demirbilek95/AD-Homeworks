@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting"
+CMAKE_SOURCE_DIR = "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting"
+CMAKE_BINARY_DIR = "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_sorting.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/test_sorting.dir/flags.make
 
 CMakeFiles/test_sorting.dir/src/bubble_sort.c.o: CMakeFiles/test_sorting.dir/flags.make
 CMakeFiles/test_sorting.dir/src/bubble_sort.c.o: src/bubble_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_sorting.dir/src/bubble_sort.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/bubble_sort.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/bubble_sort.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_sorting.dir/src/bubble_sort.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/bubble_sort.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/bubble_sort.c"
 
 CMakeFiles/test_sorting.dir/src/bubble_sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_sorting.dir/src/bubble_sort.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/bubble_sort.c" > CMakeFiles/test_sorting.dir/src/bubble_sort.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/bubble_sort.c" > CMakeFiles/test_sorting.dir/src/bubble_sort.c.i
 
 CMakeFiles/test_sorting.dir/src/bubble_sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_sorting.dir/src/bubble_sort.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/bubble_sort.c" -o CMakeFiles/test_sorting.dir/src/bubble_sort.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/bubble_sort.c" -o CMakeFiles/test_sorting.dir/src/bubble_sort.c.s
 
 CMakeFiles/test_sorting.dir/src/bubble_sort.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/test_sorting.dir/src/bubble_sort.c.o.provides.build: CMakeFiles/test_
 
 CMakeFiles/test_sorting.dir/src/heap_sort.c.o: CMakeFiles/test_sorting.dir/flags.make
 CMakeFiles/test_sorting.dir/src/heap_sort.c.o: src/heap_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/test_sorting.dir/src/heap_sort.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/heap_sort.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/heap_sort.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/test_sorting.dir/src/heap_sort.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/heap_sort.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/heap_sort.c"
 
 CMakeFiles/test_sorting.dir/src/heap_sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_sorting.dir/src/heap_sort.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/heap_sort.c" > CMakeFiles/test_sorting.dir/src/heap_sort.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/heap_sort.c" > CMakeFiles/test_sorting.dir/src/heap_sort.c.i
 
 CMakeFiles/test_sorting.dir/src/heap_sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_sorting.dir/src/heap_sort.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/heap_sort.c" -o CMakeFiles/test_sorting.dir/src/heap_sort.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/heap_sort.c" -o CMakeFiles/test_sorting.dir/src/heap_sort.c.s
 
 CMakeFiles/test_sorting.dir/src/heap_sort.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/test_sorting.dir/src/heap_sort.c.o.provides.build: CMakeFiles/test_so
 
 CMakeFiles/test_sorting.dir/src/insertion_sort.c.o: CMakeFiles/test_sorting.dir/flags.make
 CMakeFiles/test_sorting.dir/src/insertion_sort.c.o: src/insertion_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/test_sorting.dir/src/insertion_sort.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/insertion_sort.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/insertion_sort.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/test_sorting.dir/src/insertion_sort.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/insertion_sort.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/insertion_sort.c"
 
 CMakeFiles/test_sorting.dir/src/insertion_sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_sorting.dir/src/insertion_sort.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/insertion_sort.c" > CMakeFiles/test_sorting.dir/src/insertion_sort.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/insertion_sort.c" > CMakeFiles/test_sorting.dir/src/insertion_sort.c.i
 
 CMakeFiles/test_sorting.dir/src/insertion_sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_sorting.dir/src/insertion_sort.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/insertion_sort.c" -o CMakeFiles/test_sorting.dir/src/insertion_sort.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/insertion_sort.c" -o CMakeFiles/test_sorting.dir/src/insertion_sort.c.s
 
 CMakeFiles/test_sorting.dir/src/insertion_sort.c.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/test_sorting.dir/src/insertion_sort.c.o.provides.build: CMakeFiles/te
 
 CMakeFiles/test_sorting.dir/src/main.c.o: CMakeFiles/test_sorting.dir/flags.make
 CMakeFiles/test_sorting.dir/src/main.c.o: src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/test_sorting.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/main.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/main.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/test_sorting.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/main.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/main.c"
 
 CMakeFiles/test_sorting.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_sorting.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/main.c" > CMakeFiles/test_sorting.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/main.c" > CMakeFiles/test_sorting.dir/src/main.c.i
 
 CMakeFiles/test_sorting.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_sorting.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/main.c" -o CMakeFiles/test_sorting.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/main.c" -o CMakeFiles/test_sorting.dir/src/main.c.s
 
 CMakeFiles/test_sorting.dir/src/main.c.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/test_sorting.dir/src/main.c.o.provides.build: CMakeFiles/test_sorting
 
 CMakeFiles/test_sorting.dir/src/quick_sort.c.o: CMakeFiles/test_sorting.dir/flags.make
 CMakeFiles/test_sorting.dir/src/quick_sort.c.o: src/quick_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/test_sorting.dir/src/quick_sort.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/quick_sort.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/quick_sort.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/test_sorting.dir/src/quick_sort.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/quick_sort.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/quick_sort.c"
 
 CMakeFiles/test_sorting.dir/src/quick_sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_sorting.dir/src/quick_sort.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/quick_sort.c" > CMakeFiles/test_sorting.dir/src/quick_sort.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/quick_sort.c" > CMakeFiles/test_sorting.dir/src/quick_sort.c.i
 
 CMakeFiles/test_sorting.dir/src/quick_sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_sorting.dir/src/quick_sort.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/quick_sort.c" -o CMakeFiles/test_sorting.dir/src/quick_sort.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/quick_sort.c" -o CMakeFiles/test_sorting.dir/src/quick_sort.c.s
 
 CMakeFiles/test_sorting.dir/src/quick_sort.c.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/test_sorting.dir/src/quick_sort.c.o.provides.build: CMakeFiles/test_s
 
 CMakeFiles/test_sorting.dir/src/select.c.o: CMakeFiles/test_sorting.dir/flags.make
 CMakeFiles/test_sorting.dir/src/select.c.o: src/select.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/test_sorting.dir/src/select.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/select.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/select.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/test_sorting.dir/src/select.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/select.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/select.c"
 
 CMakeFiles/test_sorting.dir/src/select.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_sorting.dir/src/select.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/select.c" > CMakeFiles/test_sorting.dir/src/select.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/select.c" > CMakeFiles/test_sorting.dir/src/select.c.i
 
 CMakeFiles/test_sorting.dir/src/select.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_sorting.dir/src/select.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/select.c" -o CMakeFiles/test_sorting.dir/src/select.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/select.c" -o CMakeFiles/test_sorting.dir/src/select.c.s
 
 CMakeFiles/test_sorting.dir/src/select.c.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/test_sorting.dir/src/select.c.o.provides.build: CMakeFiles/test_sorti
 
 CMakeFiles/test_sorting.dir/src/selection_sort.c.o: CMakeFiles/test_sorting.dir/flags.make
 CMakeFiles/test_sorting.dir/src/selection_sort.c.o: src/selection_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/test_sorting.dir/src/selection_sort.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/selection_sort.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/selection_sort.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/test_sorting.dir/src/selection_sort.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/selection_sort.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/selection_sort.c"
 
 CMakeFiles/test_sorting.dir/src/selection_sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_sorting.dir/src/selection_sort.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/selection_sort.c" > CMakeFiles/test_sorting.dir/src/selection_sort.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/selection_sort.c" > CMakeFiles/test_sorting.dir/src/selection_sort.c.i
 
 CMakeFiles/test_sorting.dir/src/selection_sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_sorting.dir/src/selection_sort.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/selection_sort.c" -o CMakeFiles/test_sorting.dir/src/selection_sort.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/selection_sort.c" -o CMakeFiles/test_sorting.dir/src/selection_sort.c.s
 
 CMakeFiles/test_sorting.dir/src/selection_sort.c.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/test_sorting.dir/src/selection_sort.c.o.provides.build: CMakeFiles/te
 
 CMakeFiles/test_sorting.dir/src/swap.c.o: CMakeFiles/test_sorting.dir/flags.make
 CMakeFiles/test_sorting.dir/src/swap.c.o: src/swap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/test_sorting.dir/src/swap.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/swap.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/swap.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/test_sorting.dir/src/swap.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/swap.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/swap.c"
 
 CMakeFiles/test_sorting.dir/src/swap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_sorting.dir/src/swap.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/swap.c" > CMakeFiles/test_sorting.dir/src/swap.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/swap.c" > CMakeFiles/test_sorting.dir/src/swap.c.i
 
 CMakeFiles/test_sorting.dir/src/swap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_sorting.dir/src/swap.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/swap.c" -o CMakeFiles/test_sorting.dir/src/swap.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/swap.c" -o CMakeFiles/test_sorting.dir/src/swap.c.s
 
 CMakeFiles/test_sorting.dir/src/swap.c.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/test_sorting.dir/src/swap.c.o.provides.build: CMakeFiles/test_sorting
 
 CMakeFiles/test_sorting.dir/src/total_order.c.o: CMakeFiles/test_sorting.dir/flags.make
 CMakeFiles/test_sorting.dir/src/total_order.c.o: src/total_order.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/test_sorting.dir/src/total_order.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/total_order.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/total_order.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/test_sorting.dir/src/total_order.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/total_order.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/total_order.c"
 
 CMakeFiles/test_sorting.dir/src/total_order.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_sorting.dir/src/total_order.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/total_order.c" > CMakeFiles/test_sorting.dir/src/total_order.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/total_order.c" > CMakeFiles/test_sorting.dir/src/total_order.c.i
 
 CMakeFiles/test_sorting.dir/src/total_order.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_sorting.dir/src/total_order.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/total_order.c" -o CMakeFiles/test_sorting.dir/src/total_order.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/total_order.c" -o CMakeFiles/test_sorting.dir/src/total_order.c.s
 
 CMakeFiles/test_sorting.dir/src/total_order.c.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/test_sorting.dir/src/total_order.c.o.provides.build: CMakeFiles/test_
 
 CMakeFiles/test_sorting.dir/src/utilities.c.o: CMakeFiles/test_sorting.dir/flags.make
 CMakeFiles/test_sorting.dir/src/utilities.c.o: src/utilities.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/test_sorting.dir/src/utilities.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/utilities.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/utilities.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/test_sorting.dir/src/utilities.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_sorting.dir/src/utilities.c.o   -c "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/utilities.c"
 
 CMakeFiles/test_sorting.dir/src/utilities.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_sorting.dir/src/utilities.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/utilities.c" > CMakeFiles/test_sorting.dir/src/utilities.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/utilities.c" > CMakeFiles/test_sorting.dir/src/utilities.c.i
 
 CMakeFiles/test_sorting.dir/src/utilities.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_sorting.dir/src/utilities.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/src/utilities.c" -o CMakeFiles/test_sorting.dir/src/utilities.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/src/utilities.c" -o CMakeFiles/test_sorting.dir/src/utilities.c.s
 
 CMakeFiles/test_sorting.dir/src/utilities.c.o.requires:
 
@@ -326,7 +326,7 @@ test_sorting: CMakeFiles/test_sorting.dir/src/utilities.c.o
 test_sorting: CMakeFiles/test_sorting.dir/build.make
 test_sorting: /usr/local/lib/libbinheap.so
 test_sorting: CMakeFiles/test_sorting.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable test_sorting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable test_sorting"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_sorting.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -352,6 +352,6 @@ CMakeFiles/test_sorting.dir/clean:
 .PHONY : CMakeFiles/test_sorting.dir/clean
 
 CMakeFiles/test_sorting.dir/depend:
-	cd "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting" "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting" "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting" "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting" "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/CMakeFiles/test_sorting.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting" "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting" "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting" "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting" "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/CMakeFiles/test_sorting.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/test_sorting.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting
+# Install script for directory: /media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

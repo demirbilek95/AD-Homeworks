@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I"/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Sorting2/AD_sorting/include" -isystem /usr/local/include 
+C_INCLUDES = -I"/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/03a-Sorting/include" -isystem /usr/local/include 
 

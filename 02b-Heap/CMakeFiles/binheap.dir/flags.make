@@ -6,5 +6,5 @@ C_FLAGS = -O3 -DNDEBUG -fPIC   -std=gnu99
 
 C_DEFINES = -Dbinheap_EXPORTS
 
-C_INCLUDES = -I"/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Heap_2/AD_bin_heaps/include" -I"/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Heap_2/AD_bin_heaps" 
+C_INCLUDES = -I"/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/02b-Heap/include" -I"/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/02b-Heap" 
 

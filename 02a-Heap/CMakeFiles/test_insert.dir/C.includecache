@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Heap_2/AD_bin_heaps/tests/common/test_time.h
+/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/02a-Heap/tests/common/test_time.h
 stdlib.h
 -
 total_orders.h
-/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Heap_2/AD_bin_heaps/tests/common/total_orders.h
+/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/02a-Heap/tests/common/total_orders.h
 
-/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Heap_2/AD_bin_heaps/tests/test_insert.c
+/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/02a-Heap/tests/test_insert.c
 stdio.h
 -
 string.h
@@ -20,7 +20,7 @@ string.h
 binheap.h
 -
 common/test_time.h
-/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Heap_2/AD_bin_heaps/tests/common/test_time.h
+/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/02a-Heap/tests/common/test_time.h
 
 include/binheap.h
 stdlib.h

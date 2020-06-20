@@ -50,4 +50,3 @@ After that simply write:
 ```bash
 make install
 ```
-

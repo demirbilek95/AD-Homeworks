@@ -58,7 +58,7 @@ void quick_sort_aux(void *A, size_t l,size_t r,total_order leq,const size_t elem
 {
     while(l<r){
         size_t j = partition(A,l,l,r,leq,elem_size);
-        quick_sort_rec(A,l,j,leq,elem_size);
+        quick_sort_aux(A,l,j,leq,elem_size);
         l=j+1;
     }
 }

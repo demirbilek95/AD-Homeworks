@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Heap_2/AD_bin_heaps/src/binheap.c
+/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/02b-Heap/src/binheap.c
 binheap.h
 -
 string.h
@@ -14,7 +14,7 @@ string.h
 stdio.h
 -
 
-/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2b-Casagrandes_Code/Heap_2/AD_bin_heaps/src/total_orders.c
+/media/john/Yerel Disk/1-Doğan/1-Akademik/Yüksek Lisans/1- Dersler/2.Yarıyıl/Algoritmic Design/2a-AD-Homeworks/02b-Heap/src/total_orders.c
 stdlib.h
 -
 
