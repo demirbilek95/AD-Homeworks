@@ -6,8 +6,8 @@
 
 struct tuple new_partition(void *A, size_t p, size_t l, size_t r,total_order leq,const size_t elem_size)
 {
-
-    swap(A+(p*elem_size),A+(l*elem_size),elem_size);
+    struct tuple indices;
+    swap(ADDR(A,p,elem_size), ADDR(A,l,elem_size),elem_size);
     p = l;
     l++;
     int count = 0; // variable which is going to count the equal elements to pivot
@@ -18,12 +18,12 @@ struct tuple new_partition(void *A, size_t p, size_t l, size_t r,total_order leq
         equal = leq(ADDR(A,p,elem_size),ADDR(A,l,elem_size)) && leq(ADDR(A,l,elem_size),ADDR(A,p,elem_size));
         if(!equal){
 
-            if((leq(A+(p*elem_size),A+(l*elem_size)))){                         //A[i] > A[p]
-                swap(A+(l*elem_size),A+(r*elem_size),elem_size);                // place it in G
-                r--;                                                            // increase G's size
+            if((leq(ADDR(A,p,elem_size), ADDR(A,l,elem_size)))){                         //A[i] > A[p]
+                swap(ADDR(A,l,elem_size),ADDR(A,r,elem_size),elem_size);               
+                r--;                                                            
             }
             else{                                                               // A[i] < A[p]
-            swap(A+(l*elem_size),A+(p-count)*elem_size,elem_size);
+            swap(ADDR(A,l,elem_size), ADDR(A,p-count,elem_size),elem_size);
             p = l;
             l++;
             }
@@ -36,10 +36,9 @@ struct tuple new_partition(void *A, size_t p, size_t l, size_t r,total_order leq
         }   
     }  
 
-    swap(A+(p*elem_size), A+(r*elem_size),elem_size);
-    struct tuple indices;
-    indices.second = r-count; // position before repeated values
-    indices.first = r; // pivot position
+    swap(ADDR(A,p,elem_size), ADDR(A,r,elem_size),elem_size);
+    indices.second = r; // pivot position 
+    indices.first = r-count; // position before repeated values
     return indices;
 }
 
