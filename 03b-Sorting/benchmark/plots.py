@@ -1,30 +1,16 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-all_data = pd.read_csv("all.txt",sep="\t")
+quick_vs_quickselect = pd.read_csv("quickselect.txt",sep="\t")
 
-plot = all_data.plot(x="Size",title = "Comparison of Sorting Algorithms",figsize=(10,6))
+plot = quick_vs_quickselect.plot(x="Size",title = "Comparison of Quick Sort and Quick Sort with Select",figsize=(10,6))
 plot.set_ylabel("Time")
 fig = plot.get_figure()
-fig.savefig('all.png')
+fig.savefig('quickselect.png')
 
-insertion_data = pd.read_csv("insertion.txt",sep="\t")
+quick_vs_quickselect2 = pd.read_csv("quickselect2.txt",sep="\t")
 
-plot = insertion_data.plot(x="Size",title = "Insertion Sort",figsize=(10,6))
+plot = quick_vs_quickselect2.plot(x="Size",title = "Comparison of Quick Sort and Quick Sort with Select Higher Input Size",figsize=(10,6))
 plot.set_ylabel("Time")
 fig = plot.get_figure()
-fig.savefig('insertion.png')
-
-quick_data = pd.read_csv("quick_sort.txt",sep="\t")
-
-plot = quick_data.plot(x="Size",title = "Quick Sort",figsize=(10,6))
-plot.set_ylabel("Time")
-fig = plot.get_figure()
-fig.savefig('quick.png')
-
-quick_data = pd.read_csv("quick_vs_heap.txt",sep="\t")
-
-plot = quick_data.plot(x="Size",title = "Quick Sort vs Heap Sort",figsize=(10,6))
-plot.set_ylabel("Time")
-fig = plot.get_figure()
-fig.savefig('quick_vs_heap.png')
+fig.savefig('quickselect2.png')
