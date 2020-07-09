@@ -26,17 +26,3 @@ n Naive Alg.  Strassen's Alg.	Improved Strassen 	Same result
 4096	0.000000	0.000000	0.000000		1
 ```
 
-The first column in the output report the number of the rows and columns in the tested matrixes. 
-
-The second and third columns in the output reports the execution-time in seconds of the implementations of the naive algorithm and of the Strassen's algorithm, respectively. Since the two algorithms are not implemented in the repository, `strassen_test` initially reports 0 seconds for both of them. 
-
-Finally, the last column, which is excusively meant to validate the implementations, contains the value 1 if and only if the result of the naive algorithm and that of the Strassen's algorithm are the same.
-
-## Short Summary of Work
-In addition to original [repository](https://github.com/albertocasagrande/AD_strassen_template) to generalize implementation basically I changed the parameters of `naive_matrix_multiplication` and `improved_strassen_matrix_multiplication` functions. Before there was only `size_t n` now there are also row, column of matrices.
-For improving Strassen's algorithm, allocations of S matrices (it was 10 and redundant) reduced to 2 because maximum two S matrices were used in calculations. In conclusion improvements were observed from table which is the output of executable.
-For simplicity benchmark is performed on square matrices but functions (naive and improved strassen) are tested with non-square matrices. Test function is put inside of matrices instead of modifying its parameters.
-
-For having executable `strassen_test.x` basically make and plot (benchmark_plot folder) `python plot.py` are enough
-
-![Plot](/benchmark_plot/Benchmark_results.png) 
