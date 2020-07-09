@@ -74,14 +74,14 @@ void print_matrix(float **A,const size_t r, const size_t c){
 }
 
 float **pad_matrix(float const* const* const M,const size_t Mrows, const size_t Mcols,const size_t Nrows,
-                const size_t Ncols, const size_t RowSeek, const size_t ColSeek){
+                const size_t Ncols, const size_t r, const size_t c){
 
     float** padded_matrix = allocate_matrix(Nrows, Ncols);
     for (size_t i = 0; i < Mrows; i++)
     {
         for (size_t j = 0; j < Mcols; j++)
         {
-            padded_matrix[i][j] = M[i + RowSeek][j + ColSeek];
+            padded_matrix[i][j] = M[i + r][j + c];
         }
     }
     
@@ -90,11 +90,11 @@ float **pad_matrix(float const* const* const M,const size_t Mrows, const size_t 
 
 
 void unpad(float** padded_matrix, float const* const* const M, const size_t Mrows, const size_t Mcols, const size_t Nrows,
-           const size_t Ncols, const size_t FromRow, const size_t FromCol)
+           const size_t Ncols, const size_t r, const size_t c)
 {
-    for (size_t i = FromRow; i < Nrows + FromRow; ++i)
+    for (size_t i = r; i < Nrows + r; ++i)
     {
-        for (size_t j = FromCol; j < Ncols + FromCol; ++j)
+        for (size_t j = c; j < Ncols + c; ++j)
         {
             padded_matrix[i][j] = M[i][j];
         }

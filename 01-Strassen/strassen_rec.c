@@ -307,37 +307,37 @@ void improved_strassen_matrix_multiplication(float **C, float const *const *cons
 
 {
     // Here we find the needed row and column for padding process simply finding the smallest power of 2 which is higher than given parameter
-    size_t ApadRow = smallest_pow_two(A_f_row);
-    size_t ApadCol = smallest_pow_two(A_f_col);
-    size_t BpadCol = smallest_pow_two(B_f_col);
+    size_t Apad_row = pow_two(A_f_row);
+    size_t Apad_col = pow_two(A_f_col);
+    size_t Bpad_col = pow_two(B_f_col);
     /*printf("BpadCol: %ld\n",BpadCol);
     printf(" ApadRow: %ld\n ApadCol: %ld\n BpadCol: %ld",ApadRow,ApadCol,BpadCol);*/
 
-    float** Apad = pad_matrix(A, A_f_row, A_f_col, ApadRow, ApadCol, 0, 0);
-    float** Bpad = pad_matrix(B, A_f_col, B_f_col, ApadCol, BpadCol, 0, 0);
-    float** Ctemp = allocate_matrix(ApadRow, BpadCol);
+    float** Apad = pad_matrix(A, A_f_row, A_f_col, Apad_row, Apad_col, 0, 0);
+    float** Bpad = pad_matrix(B, A_f_col, B_f_col, Apad_col, Bpad_col, 0, 0);
+    float** Ctemp = allocate_matrix(Apad_row, Bpad_col);
 
-    printf("Padded Matrix A:\n");
+    /*printf("Padded Matrix A:\n");
     print_matrix(Apad,ApadRow,ApadCol);
 
     printf("Padded Matrix B:\n");
-    print_matrix(Bpad,ApadCol,BpadCol);
+    print_matrix(Bpad,ApadCol,BpadCol);*/
 
-    size_t ntemp = ApadRow < ApadCol ? ApadRow : ApadCol;
-    size_t n = ntemp < BpadCol ? ntemp : BpadCol;
+    size_t ntemp = Apad_row < Apad_col ? Apad_row : Apad_col;
+    size_t n = ntemp < Bpad_col ? ntemp : Bpad_col;
    // printf("N:%ld",n);
 
     // Calculating the multp. result on padded matrix which is suitable for our template
-    strassen_aux_improved(Ctemp, Apad, Bpad,0,0,0,0,0,0,ApadRow,ApadCol,ApadCol,BpadCol);
+    strassen_aux_improved(Ctemp, Apad, Bpad,0,0,0,0,0,0,Apad_row,Apad_col,Apad_col,Bpad_col);
 
     /*printf("MAtrix Ctemp\n");
     print_matrix(Ctemp,ApadRow, BpadCol);*/
 
     // Unpading the the matrix to get the result
-    unpad(C, (const float* const* const)Ctemp, ApadRow, BpadCol, A_f_row, B_f_col, 0, 0);
+    unpad(C, (const float* const* const)Ctemp, Apad_row, Bpad_col, A_f_row, B_f_col, 0, 0);
 
-    deallocate_matrix(Apad, ApadRow);
-    deallocate_matrix(Bpad, ApadCol);
-    deallocate_matrix(Ctemp, ApadRow);
+    deallocate_matrix(Apad, Apad_row);
+    deallocate_matrix(Bpad, Apad_col);
+    deallocate_matrix(Ctemp, Apad_row);
 
 }

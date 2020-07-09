@@ -271,13 +271,13 @@ void improved_strassen_matrix_multiplication(float **C, float const *const *cons
 
 {
     // Here we find the needed row and column for padding process simply finding the smallest power of 2 which is higher than given parameter
-    size_t ApadRow = pow_two(A_f_row);
-    size_t ApadCol = pow_two(A_f_col);
-    size_t BpadCol = pow_two(B_f_col);
+    size_t Apad_row = pow_two(A_f_row);
+    size_t Apad_col = pow_two(A_f_col);
+    size_t Bpad_col = pow_two(B_f_col);
 
     // Find the highest pow_two to make matrices squares
-    size_t ntemp = ApadRow > ApadCol ? ApadRow : ApadCol;
-    size_t n = ntemp > BpadCol ? ntemp : BpadCol;
+    size_t ntemp = Apad_row > Apad_col ? Apad_row : Apad_col;
+    size_t n = ntemp > Bpad_col ? ntemp : Bpad_col;
 
     float** Apad = pad_matrix(A, A_f_row, A_f_col, n, n, 0, 0);
     float** Bpad = pad_matrix(B, A_f_col, B_f_col, n, n, 0, 0);
@@ -287,7 +287,7 @@ void improved_strassen_matrix_multiplication(float **C, float const *const *cons
     strassen_aux_improved(Ctemp, Apad, Bpad,0,0,0,0,0,0,n);
 
     // Unpading the the matrix to get the result
-    unpad(C, (const float* const* const)Ctemp, ApadRow, BpadCol, A_f_row, B_f_col, 0, 0);
+    unpad(C, (const float* const* const)Ctemp, Apad_row, Bpad_col, A_f_row, B_f_col, 0, 0);
 
     deallocate_matrix(Apad, n);
     deallocate_matrix(Bpad, n);
