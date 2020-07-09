@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 #include "matrix.h"
 #include "strassen.h"
 #include "improved_strassen.h"
@@ -11,16 +10,6 @@ double get_execution_time(const struct timespec b_time,
 {
   return (e_time.tv_sec-b_time.tv_sec) +
                    (e_time.tv_nsec-b_time.tv_nsec)/1E9;
-}
-
-void print_matrix(float **A,const size_t r, const size_t c){
-  for (size_t i = 0; i < r; i++) {
-    for (size_t j = 0; j < c; j++) {
-      printf("%f ",A[i][j]);
-    }
-    printf("\n");
-  }
-
 }
 
 int main(int argc, char *argv[]) {
@@ -48,7 +37,7 @@ int main(int argc, char *argv[]) {
     fprintf(f,"%ld\t", j);
 
     clock_gettime(CLOCK_REALTIME, &b_time);
-    naive_matrix_multiplication(C0, A, B, j, j, j, j);
+    naive_matrix_multiplication(C0, A, B, j, j, j);
     clock_gettime(CLOCK_REALTIME, &e_time);
 
     printf("%lf\t", get_execution_time(b_time, e_time));
@@ -62,7 +51,7 @@ int main(int argc, char *argv[]) {
     fprintf(f,"%lf\t", get_execution_time(b_time, e_time));
 
     clock_gettime(CLOCK_REALTIME, &b_time);
-    improved_strassen_matrix_multiplication(C2,A,B,j,j,j,j);
+    improved_strassen_matrix_multiplication(C2,A,B,j,j,j);
     clock_gettime(CLOCK_REALTIME, &e_time);
 
     printf("%lf\t", get_execution_time(b_time, e_time));
@@ -95,30 +84,35 @@ int main(int argc, char *argv[]) {
   deallocate_matrix(C2, n);
 
 
-// This part is written to test if functions work properly for non-square matrices
-/*
-  float **A = allocate_random_matrix(11, 12);
-  float **B = allocate_random_matrix(12, 11);
-  float **C0 = allocate_matrix(11, 11);
-  float **C1 = allocate_matrix(11, 11);
+// This part is written to test whether functions work properly for non-square matrices
 
-  printf("\n");
-  print_matrix(A,11,12);
-  printf("\n");
-  print_matrix(B,12,11);
+  /*int n1=7,n2=11,n3=8;
+
+  float **A = allocate_random_matrix(n1, n2);
+  float **B = allocate_random_matrix(n2, n3);
+  float **C0 = allocate_matrix(n1, n3);
+  float **C1 = allocate_matrix(n1, n3);
+
+  printf("Matrix A:\n");
+  print_matrix(A,n1,n2);
+  printf("Matrix B:\n");
+  print_matrix(B,n2,n3);
   printf("\n");
 
-  naive_matrix_multiplication(C0,A,B,11,12,12,11);
-  improved_strassen_matrix_multiplication(C1,A,B,11,12,12,11);
+  naive_matrix_multiplication(C0,A,B,n1,n2,n3);
+  improved_strassen_matrix_multiplication(C1,A,B,n1,n2,n3);
 
-  print_matrix(C0,11,11);
-  printf("\n");
-  print_matrix(C1,11,11);
+  printf("Result of naive\n");
+  print_matrix(C0,n1,n3);
+  printf("Result of strassen\n");
+  print_matrix(C1,n1,n3);
 
-  deallocate_matrix(A, 11);
-  deallocate_matrix(B, 12);
-  deallocate_matrix(C0, 11);
-  deallocate_matrix(C1, 11);*/
+  printf("\nResult is same ?= %d", same_matrix(C0,C1,n1,n3));
+
+  deallocate_matrix(A, n1);
+  deallocate_matrix(B, n2);
+  deallocate_matrix(C0, n1);
+  deallocate_matrix(C1, n1);*/
 
   return 0;
 }

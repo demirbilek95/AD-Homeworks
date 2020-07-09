@@ -1,17 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 #include "matrix.h"
 
 void naive_matrix_multiplication(float **C, float const *const *const A,
                                 float const *const *const B,
                                 const size_t A_f_row,const size_t A_f_col,
-                                const size_t B_f_row,const size_t B_f_col) 
+                                const size_t B_f_col) 
 {
-  if(A_f_col != B_f_row){
-    printf("Matrix multplication can't be done. Number of column of matrix A has to be equal to number of row of matrix B\t");
-  }
-  else{
     for (size_t y = 0; y < A_f_row; y++) {
       for (size_t x = 0; x < B_f_col; x++) {
         float value = 0.0;
@@ -21,7 +16,6 @@ void naive_matrix_multiplication(float **C, float const *const *const A,
         C[y][x] = value;
       }
     }
-  }
 }
 
 int same_matrix(float const *const *const A, float const *const *const B,
@@ -69,3 +63,42 @@ float **allocate_random_matrix(const size_t rows, const size_t cols) {
   return A;
 }
 
+void print_matrix(float **A,const size_t r, const size_t c){
+  for (size_t i = 0; i < r; i++) {
+    for (size_t j = 0; j < c; j++) {
+      printf("%f ",A[i][j]);
+    }
+    printf("\n");
+  }
+
+}
+
+float **pad_matrix(float const* const* const M,const size_t Mrows, const size_t Mcols,const size_t Nrows,
+                const size_t Ncols, const size_t RowSeek, const size_t ColSeek){
+
+    float** padded_matrix = allocate_matrix(Nrows, Ncols);
+    for (size_t i = 0; i < Mrows; i++)
+    {
+        for (size_t j = 0; j < Mcols; j++)
+        {
+            padded_matrix[i][j] = M[i + RowSeek][j + ColSeek];
+        }
+    }
+    
+    return padded_matrix;  
+  }
+
+
+void unpad(float** padded_matrix, float const* const* const M, const size_t Mrows, const size_t Mcols, const size_t Nrows,
+           const size_t Ncols, const size_t FromRow, const size_t FromCol)
+{
+    for (size_t i = FromRow; i < Nrows + FromRow; ++i)
+    {
+        for (size_t j = FromCol; j < Ncols + FromCol; ++j)
+        {
+            padded_matrix[i][j] = M[i][j];
+        }
+    }
+
+    return;
+}

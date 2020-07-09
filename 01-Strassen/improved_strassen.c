@@ -1,13 +1,7 @@
 #include <stdio.h>
+#include <math.h>
 #include "matrix.h"
 
-/*
- * this function performs the element-wise
- * subtraction of B from A and put the resulting
- * sub-matrix in C. The parameters *_f_row and *_f_col
- * represents the first row and the first column,
- * respectively, of the sub-matrix we want to deal with.
- */
 void sub_matrix_blocks(float **C, float const *const *const A,
                        float const *const * const B,
                        const size_t C_f_row, const size_t C_f_col,
@@ -15,13 +9,6 @@ void sub_matrix_blocks(float **C, float const *const *const A,
                        const size_t B_f_row, const size_t B_f_col,
                        const size_t n);
 
-/*
- * this function performs the element-wise
- * sum of A and B and put the resulting
- * sub-matrix in C. The parameters *_f_row and *_f_col
- * represents the first row and the first column,
- * respectively, of the sub-matrix we want to deal with.
- */
 void sum_matrix_blocks(float **C, float const *const *const A,
                        float const *const * const B,
                        const size_t C_f_row, const size_t C_f_col,
@@ -29,14 +16,7 @@ void sum_matrix_blocks(float **C, float const *const *const A,
                        const size_t B_f_row, const size_t B_f_col,
                        const size_t n);
 
-/*
- * this function implements the naive algorithm
- * for matrix multiplication between sub-matrixes.
- * The result is placed in the sub-matrix C.
- * The parameters *_f_row and *_f_col
- * represents the first row and the first column,
- * respectively, of the sub-matrix we want to deal with.
- */
+
 void naive_aux(float **C, float const *const *const A,
                float const *const * const B,
                const size_t C_f_row, const size_t C_f_col,
@@ -44,14 +24,7 @@ void naive_aux(float **C, float const *const *const A,
                const size_t B_f_row, const size_t B_f_col,
                const size_t n);
 
-/*
- * This function implements the Strassen's algorithm
- * for matrix multiplication between sub-matrixes.
- * The result is placed in the sub-matrix C.
- * The parameters *_f_row and *_f_col
- * represents the first row and the first column,
- * respectively, of the sub-matrix we want to deal with.
- */
+
 void strassen_aux_improved(float **C, float const *const *const A,
                   float const *const * const B,
                   const size_t C_f_row, const size_t C_f_col,
@@ -70,6 +43,9 @@ void strassen_aux_improved(float **C, float const *const *const A,
     }
 
     size_t n2 = n/2; // This is the size of the blocks
+
+    // Here allocated S matrices were decreased to reduce the memory allocation same procedure can be done 
+    // for P matrices (3-4 allocation is sufficient) but for simplicity allocation of P matrices are left as it is
 
     float ***S = (float ***)malloc(sizeof(float **) * 2);
     for (size_t i = 0; i < 2; i++) {
@@ -271,6 +247,18 @@ void strassen_aux_improved(float **C, float const *const *const A,
     free(P);   
 }
 
+// get the smallest power of 2 which is higher than given paramter (will be used for padding)
+int pow_two(const int r)
+{
+  int i = 0;
+  int p = pow(2,i);
+  while(p<r)
+  {
+    p = pow(2,i);
+    i++;
+  }
+  return p;
+}
 
 /*
  * this functions is exclusively meant to provide an
@@ -279,24 +267,30 @@ void strassen_aux_improved(float **C, float const *const *const A,
 void improved_strassen_matrix_multiplication(float **C, float const *const *const A,
                                     float const *const *const B,
                                     const size_t A_f_row,const size_t A_f_col,
-                                    const size_t B_f_row,const size_t B_f_col)
+                                    const size_t B_f_col)
 
 {
+    // Here we find the needed row and column for padding process simply finding the smallest power of 2 which is higher than given parameter
+    size_t ApadRow = pow_two(A_f_row);
+    size_t ApadCol = pow_two(A_f_col);
+    size_t BpadCol = pow_two(B_f_col);
 
-if(A_f_col != B_f_row){
-    printf("Matrix multplication can't be done. Number of column of matrix A has to be equal to number of row of matrix B\t");
-  }
+    // Find the highest pow_two to make matrices squares
+    size_t ntemp = ApadRow > ApadCol ? ApadRow : ApadCol;
+    size_t n = ntemp > BpadCol ? ntemp : BpadCol;
 
-else{
-    
-  strassen_aux_improved(C, A, B,
-               0, 0,
-               0, 0,
-               0, 0,
-               A_f_row);
-    }
+    float** Apad = pad_matrix(A, A_f_row, A_f_col, n, n, 0, 0);
+    float** Bpad = pad_matrix(B, A_f_col, B_f_col, n, n, 0, 0);
+    float** Ctemp = allocate_matrix(n, n);
+
+    // Calculating the multp. result on padded matrix which is suitable for our template
+    strassen_aux_improved(Ctemp, Apad, Bpad,0,0,0,0,0,0,n);
+
+    // Unpading the the matrix to get the result
+    unpad(C, (const float* const* const)Ctemp, ApadRow, BpadCol, A_f_row, B_f_col, 0, 0);
+
+    deallocate_matrix(Apad, n);
+    deallocate_matrix(Bpad, n);
+    deallocate_matrix(Ctemp, n);
+
 }
-
-
-
-

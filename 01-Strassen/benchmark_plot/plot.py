@@ -19,4 +19,3 @@ plt.title("Benchmark Results")
 ax.legend()
 
 plt.savefig("Benchmark_results.png")
-plt.show("Benchmark_results.png")

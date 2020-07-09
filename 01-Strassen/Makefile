@@ -1,6 +1,6 @@
 CXX = gcc
 OPT = -O4
-CXXFLAGS = -w
+CXXFLAGS = -w -lm -I.
 
 all: strassen_test.x
 
