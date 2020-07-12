@@ -1,13 +1,17 @@
 TEST = test.o 
 CXX = gcc
-TESTSRC = src/main.c 
-CXXFLAGS = -Wall -Wextra -lm
+MAIN = src/main.c     
+ARRAY = src/array.c
+BINHEAP = src/binheap.c
+DISKSTRA = src/dijkstra.c
+GRAPH = src/graph.c
+TOTALORDER = src/total_orders.c
 IFLAGS = -I include
 
-all: $(TEST) $(BENCHMARK)
+all: $(TEST)
 
-$(TEST): $(TESTSRC)
-	$(CXX) -g $< -o $(TEST) $(CXXFLAGS) $(IFLAGS) $(DFLAGS)
+$(TEST): $(MAIN) $(ARRAY) $(BINHEAP) $(DISKSTRA) $(GRAPH) $(TOTALORDER)
+	$(CXX) -g -o $(TEST) $^ $(IFLAGS)
 
 clean: 
 	@rm -fr *.o docs/html docs/latex

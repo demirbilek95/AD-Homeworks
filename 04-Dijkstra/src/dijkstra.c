@@ -1,4 +1,5 @@
 #include "dijkstra.h"
+#include <stdio.h>
 
 void array_dijkstra(graph *g, size_t s){
     init_graph(g);
@@ -11,11 +12,11 @@ void array_dijkstra(graph *g, size_t s){
 
     while (!(temp->size == 0)){
         Node *u = extract_min_A(temp);
-        size_t n = num_adj(g,u);
+        int n = num_adj(g,u);
         Node **v = adj(g,u,n);
 
         for (size_t i = 0; i < n; i++){
-            relax_array(temp,u,v[i],weight(g,u,v[i]));
+            relax_array(u,v[i],weight(g,u,v[i]));
         }
         free(v);
         

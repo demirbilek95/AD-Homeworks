@@ -230,11 +230,4 @@ void print_heap(const binheap_type *H,
         key_printer(ADDR(H,node));
     }
     printf("\n");
-} 
-
-void relax_heap(binheap_type *h, Node *u, Node*v, double w){
-    if (u->d + w < v->d){
-        update_distance(h,v, u->d+w);
-        v->prev = u;
-    }   
 }

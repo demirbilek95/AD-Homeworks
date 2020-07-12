@@ -12,7 +12,7 @@ Array init_array(Node *array_nodes, const size_t n){
     return a;    
 }
 
-void relax_array(Array *a, Node *u, Node *v,double w){
+void relax_array(Node *u, Node *v,double w){
     if (u->d + w < v->d){
         u->d = u->d + w;
         v->prev = u;
@@ -30,7 +30,7 @@ void relax_heap(binheap_type *h, Node *u, Node*v, double w){
     }   
 }
 
-size_t extract_min_A(Array *a){
+Node *extract_min_A(Array *a){
     size_t min_idx = 0;
     int min = a->A[0]->d;
 
