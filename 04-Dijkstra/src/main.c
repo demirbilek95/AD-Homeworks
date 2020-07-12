@@ -26,7 +26,7 @@ int main()
     g1.v = (Node *)malloc(sizeof(Node)*size);
     init_graph(&g1);
     //print_graph(&g1);
-    graph *gptr = &g1;
+   /* graph *gptr = &g1;
 
     Node *source = get_node(gptr,0);
     source->d = 0;
@@ -46,11 +46,12 @@ int main()
 
     Node **adj = (Node**) malloc(sizeof(Node*)*n);
     int w = weight(gptr,u,&(gptr->v)[1]);
-    printf("\n\nW %i",w);
+    printf("\n\nW %i",w);*/
+
+
 
     
-    
-    //array_dijkstra(&g1,0);
+    array_dijkstra(&g1,0);
 
 
     graph g2;

@@ -40,7 +40,7 @@ int num_adj(graph *g, Node *v){
 
 Node **adj(graph *g, Node *u, int n){
     Node **adj = (Node**) malloc(sizeof(Node*)*n);
-    int a;
+    int a=0;
     for (int i = 0; i < g->size; i++){
         int w = weight(g,u,&(g->v)[i]);
         if (w < INF && (g->v)[i].id != u->id)
