@@ -1,5 +1,4 @@
 #include "graph.h"
-#include <stdio.h>
 
 void init_graph(graph *g){
     size_t n = g->size;
@@ -40,11 +39,12 @@ int num_adj(graph *g, Node *v){
 
 Node **adj(graph *g, Node *u, int n){
     Node **adj = (Node**) malloc(sizeof(Node*)*n);
-    int a=0;
+    int a = 0;
     for (int i = 0; i < g->size; i++){
         int w = weight(g,u,&(g->v)[i]);
-        if (w < INF && (g->v)[i].id != u->id)
+        if (w < INF && (g->v)[i].id != u->id){
             adj[a++] = &(g->v)[i];
+        }
     }
     return adj;
     

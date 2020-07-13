@@ -4,7 +4,6 @@
 #define INF 1000000000  
             
 #include <stdlib.h>
-#include "binheap.h"
 
 typedef struct Node
 {
@@ -21,9 +20,7 @@ typedef struct Array {
 } Array;
 
 Array init_array(Node *array_nodes, const size_t n);
-void relax_array(Node *u, Node *v,double w);
-// relaxation implementation for bin_heap data type
-void relax_heap(binheap_type *h, Node *u, Node*v, double w);
+void relax(Node *u, Node *v,unsigned int w);
 Node *extract_min_A(Array *a);
 void free_array(Array A);
 

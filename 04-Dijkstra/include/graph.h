@@ -1,8 +1,8 @@
 #ifndef __graph__
 #define __graph__
 
-
 #include "array.h"
+#include <stdio.h>
 
 typedef struct graph
 {

@@ -1,6 +1,4 @@
-#include <binheap.h>
-#include <string.h>
-#include <stdio.h>
+#include "binheap.h"
 
 // node is the index (i)
 //since indexing starts from 0 in C

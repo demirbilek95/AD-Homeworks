@@ -1,5 +1,6 @@
 #include "dijkstra.h"
-#include <stdio.h>
+#include "binheap.h"
+#include "total_orders.h"
 
 void array_dijkstra(graph *g, size_t s){
     init_graph(g);
@@ -16,7 +17,7 @@ void array_dijkstra(graph *g, size_t s){
         Node **v = adj(g,u,n);
 
         for (size_t i = 0; i < n; i++){
-            relax_array(u,v[i],weight(g,u,v[i]));
+            relax(u,v[i],weight(g,u,v[i]));
         }
         free(v);
         
@@ -30,17 +31,18 @@ void heap_dijkstra(graph *g, size_t s){
     Node *source = get_node(g,s);
     source->d = 0;
 
-    binheap_type *heap = build_heap(g->v,g->size,g->size,sizeof(Node),leq_int);
+    binheap_type *heap = build_heap(g->v,g->size,g->size,sizeof(Node),leq_node);
 
     while (!is_heap_empty(heap))
     {
         Node *u = (Node *)extract_min(heap);
-        size_t n = num_adj(g,u);
+        int n = num_adj(g,u);
         Node **v = adj(g,u,n);
 
         for (size_t i = 0; i < n; i++){
             relax_heap(heap,u,v[i],weight(g,u,v[i]));
         }
+        heapify(heap,0);
         free(v);
     }
     delete_heap(heap);
