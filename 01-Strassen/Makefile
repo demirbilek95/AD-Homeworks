@@ -1,13 +1,19 @@
+TEST = strassen_test.x
 CXX = gcc
 OPT = -O4
-CXXFLAGS = -w -lm -I.
+MAIN = src/main.c     
+MATRIX = src/matrix.c
+STRASSEN = src/strassen.c
+IMP_STRASSEN = src/improved_strassen.c
+CXXFLAGS = -Wall -Wextra 
+IFLAGS = -I include -lm
 
-all: strassen_test.x
+all: $(TEST)
 
-strassen_test.x: main.c matrix.c strassen.c improved_strassen.c
-	$(CXX) $(OPT) -o $@ $^ $(CXXFLAGS)
+$(TEST): $(MAIN) $(MATRIX) $(STRASSEN) $(IMP_STRASSEN)
+	$(CXX) -g -o $(TEST) $^ $(IFLAGS)
 
-clean:
-	@rm *.x
+clean: 
+	@rm -fr *.x docs/html docs/latex
 
-.PHONY: clean all
+.PHONY: all docs clean
