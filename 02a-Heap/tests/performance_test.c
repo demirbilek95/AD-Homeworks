@@ -21,7 +21,7 @@ int main() {
     float *maxA=(float *)malloc(sizeof(int)*MAX_SIZE);
 
     FILE *fp;
-    fp = fopen("output.txt","w");
+    fp = fopen("insert.txt","w");
     fprintf(fp,"Number_of_Elements\tTimes\n");
 
     for (int i = 10; i < MAX_SIZE; i+=10)

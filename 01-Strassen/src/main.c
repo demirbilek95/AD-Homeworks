@@ -19,8 +19,8 @@ int main(int argc, char *argv[]) {
 
   size_t n = 1 << 11;
 
-  float **A = allocate_random_matrix(n, n);
-  float **B = allocate_random_matrix(n, n);
+  float const *const *const A = allocate_random_matrix(n, n);
+  float const *const *const **B = allocate_random_matrix(n, n);
   float **C0 = allocate_matrix(n, n);
   float **C1 = allocate_matrix(n, n);
   float **C2 = allocate_matrix(n, n);

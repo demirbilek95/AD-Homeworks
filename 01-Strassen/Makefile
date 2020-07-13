@@ -6,7 +6,7 @@ MATRIX = src/matrix.c
 STRASSEN = src/strassen.c
 IMP_STRASSEN = src/improved_strassen.c
 CXXFLAGS = -Wall -Wextra 
-IFLAGS = -I include -lm
+IFLAGS = -I include -lm -w
 
 all: $(TEST)
 

@@ -7,7 +7,7 @@ DISKSTRA = src/dijkstra.c
 GRAPH = src/graph.c
 TOTALORDER = src/total_orders.c
 CXXFLAGS = -Wall -Wextra 
-IFLAGS = -I include -lm
+IFLAGS = -I include -lm -w
 
 all: $(TEST)
 
