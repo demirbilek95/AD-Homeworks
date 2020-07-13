@@ -2,7 +2,7 @@
 
 This repository includes the homeworks of Algorithm Design.
 
-## Structure of files
+## General Structure
 
 * `benchmark & tests` : These folders includes result of performance tests as `txt` file, python plot scripts and plots or also the test scripts which is written in `C`.
 * `include` : This folder includes all the header files
