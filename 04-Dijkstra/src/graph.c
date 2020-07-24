@@ -16,7 +16,6 @@ Node *get_node(graph *g, int id){
         if (n[i].id == id) return &n[i];
     return NULL;
         }
-    printf("get_node returns:%d",n->id);
     }
     
 
@@ -52,7 +51,7 @@ Node **adj(graph *g, Node *u, int n){
 
 void print_graph(graph *g){
     int size = g->size;
-    printf("Size of graph is %i \nWeights matrix of graph: \n", size);
+    printf("Size of graph is %i \n", size);
 
     for (size_t i = 0; i < size; i++){
         for (size_t j = 0; j < size; j++){

@@ -1,15 +1,3 @@
-/*
-For generalizing the implementation to deal with non-square matrices, 
-simply I added new parameters (which is different from n) and 
-check if row number of matrix A equal to column number of matrix B
-*/
-
-/*
-For improving strassen algorithm implementation, all the operations that involved S matrices
-can be handled by 2 allocation instead of 10, this lead to smaller execution times
-*/
-
-
 #ifndef __IMPROVED_STRASSEN__
 
 void improved_strassen_matrix_multiplication(float **C, float const *const *const A,

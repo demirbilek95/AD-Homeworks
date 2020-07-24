@@ -16,7 +16,6 @@
 int is_heap_empty(const binheap_type *H)
 {
     
-
     return H->num_of_elem==0;
 }
 

@@ -1,4 +1,4 @@
-#include <binheap.h>
+#include "binheap.h"
 #include <string.h>
 #include <stdio.h>
 

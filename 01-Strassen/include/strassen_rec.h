@@ -1,9 +1,3 @@
-/*
-For improving strassen algorithm implementation, all the operations that involved S matrices
-can be handled by 2 allocation instead of 10, this lead to smaller execution times
-*/
-
-
 #ifndef __IMPROVED_STRASSEN__
 
 void improved_strassen_matrix_multiplication(float **C, float const *const *const A,
